@@ -18,3 +18,8 @@ find . -name "*stderr" -type f -delete
 bsub -J "job name" -P acc_load -q premium -n 1 -R span[hosts=1] -R rusage[mem=16000] -W 24:00 -L /bin/bash \
 -o jobname.stdout -eo jobname.stderr "command"
 ```
+
+**Number of jobs running** 
+```
+runningJobs=$(bjobs | grep RUN | wc -l); TotalJobs=$(bjobs | wc -l); bjobs -w; echo "Currently ${runningJobs} out of ${TotalJobs} are running"
+```
