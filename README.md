@@ -1,5 +1,23 @@
 # Cheat-Sheet
 
+**LOAD project paths**
+```
+/sc/orga/projects/LOAD/shea/
+/sc/orga/projects/LOAD/shea/bin/MitoImpute
+/sc/orga/projects/LOAD/shea/Projects/2_MR/
+/sc/orga/projects/LOAD/shea/data/sumstats_munger
+```
+
+**sshfs**
+```
+sshfs andres12@bode.hpc.mssm.edu:/sc/orga/projects/LOAD ~/LOAD_minerva/dummy
+```
+
+**Moving binary file to be able to launch from anywhere**
+```
+cp <binary.file> /usr/local/bin/
+```
+
 **Use Awk to find the max value in a column**
 
 Find the highest value in column 1, skipping the header, print the whole line. 
