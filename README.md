@@ -41,3 +41,8 @@ bsub -J "job name" -P acc_load -q premium -n 1 -R span[hosts=1] -R rusage[mem=16
 ```
 runningJobs=$(bjobs | grep RUN | wc -l); TotalJobs=$(bjobs | wc -l); bjobs -w; echo "Currently ${runningJobs} out of ${TotalJobs} are running"
 ```
+
+**Decombress .bgz file 
+```
+mv file.vcf.bgz file.gz
+```
