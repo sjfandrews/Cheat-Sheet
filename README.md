@@ -51,3 +51,8 @@ mv file.vcf.bgz file.gz
 ```
 find | grep "string"
 ```
+
+**SCP from chimera to local
+```
+scp andres12@chimera.hpc.mssm.edu:/sc/orga/projects/LOAD/shea/UKBB_gws_sig.tsv.gz /Users/shea/Downloads/
+```
