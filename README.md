@@ -44,26 +44,31 @@ bsub -J "job name" -P acc_load -q premium -n 1 -R span[hosts=1] -R rusage[mem=16
 runningJobs=$(bjobs | grep RUN | wc -l); TotalJobs=$(bjobs | wc -l); bjobs -w; echo "Currently ${runningJobs} out of ${TotalJobs} are running"
 ```
 
-**Decompress .bgz file 
+**Decompress .bgz file** 
 
 ```
 mv file.vcf.bgz file.gz
 ```
 
-**Fine file name in directory 
+**Fine file name in directory** 
 
 ```
 find | grep "string"
 ```
 
-**SCP from chimera to local
+**SCP from chimera to local**
 
 ```
 scp andres12@chimera.hpc.mssm.edu:/sc/orga/projects/LOAD/shea/file /Users/shea/Downloads/
 ```
 
-**SCP from local to chimera
+**SCP from local to chimera**
 
 ```
 scp /Users/shea/Downloads/file andres12@chimera.hpc.mssm.edu:/sc/orga/projects/LOAD/shea/file 
+```
+
+**Launch interactive job**
+```
+bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 16 -ISs /usr/bin/env bash
 ```
