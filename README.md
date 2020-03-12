@@ -70,5 +70,5 @@ scp /Users/shea/Downloads/file andres12@chimera.hpc.mssm.edu:/sc/orga/projects/L
 
 **Launch interactive job**
 ```
-bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 4 -ISs /usr/bin/env bash
+bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 -ISs /usr/bin/env bash
 ```
