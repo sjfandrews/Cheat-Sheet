@@ -2,10 +2,10 @@
 
 **LOAD project paths**
 ```
-/sc/orga/projects/LOAD/shea/
-/sc/orga/projects/LOAD/shea/bin/MitoImpute
-/sc/orga/projects/LOAD/shea/Projects/2_MR/
-/sc/orga/projects/LOAD/shea/data/sumstats_munger
+/sc/arion/projects/LOAD/shea/
+/sc/arion/projects/LOAD/shea/bin/MitoImpute
+/sc/arion/projects/LOAD/shea/Projects/2_MR/
+/sc/arion/projects/LOAD/shea/data/sumstats_munger
 /sc/hydra/scratch/andres12
 ```
 
