@@ -38,6 +38,22 @@ bsub -J "job name" -P acc_load -q premium -n 1 -R span[hosts=1] -R rusage[mem=16
 -o jobname.stdout -eo jobname.stderr "command"
 ```
 
+```
+#!/bin/bash
+#BSUB -J "Job Name"
+#BSUB -P acc_load
+#BSUB -q premium
+#BSUB -n 2
+#BSUB -R span[hosts=1]
+#BSUB -R rusage[mem=16000]
+#BSUB -W 24:00
+#BSUB -oo %J.stdout
+#BSUB -eo %J.stderr
+
+"Command"
+```
+
+
 **Number of jobs running** 
 
 ```
