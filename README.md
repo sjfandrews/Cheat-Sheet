@@ -1,5 +1,8 @@
 # Cheat-Sheet
 
+**Tutorials**
+[Snakemake](https://slowkow.com/notes/snakemake-tutorial/)
+
 **LOAD project paths**
 ```
 /sc/arion/projects/LOAD/shea/
