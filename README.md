@@ -13,6 +13,12 @@
 /sc/hydra/scratch/andres12
 ```
 
+**tmux**
+```
+tmux new -s myname
+tmux a -t myname
+```
+
 **sshfs**
 ```
 sshfs andres12@bode.hpc.mssm.edu:/sc/orga/projects/LOAD ~/LOAD_minerva/dummy
