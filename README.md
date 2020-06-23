@@ -8,7 +8,7 @@
 ```
 /sc/arion/projects/LOAD/shea/
 /sc/arion/projects/LOAD/shea/bin/MitoImpute
-/sc/arion/projects/LOAD/shea/Projects/2_MR/
+/sc/arion/projects/LOAD/shea/Projects/MR_ADPhenome/
 /sc/arion/projects/LOAD/shea/data/sumstats_munger
 /sc/hydra/scratch/andres12
 ```
