@@ -1,31 +1,17 @@
+# My existing directory structure
+
 ```
 ├── .gitignore
 ├── README.md
 ├── LICENSE.md
-├── workflow
-│   ├── rules
-|   │   ├── module1.smk
-|   │   └── module2.smk
-│   ├── envs
-|   │   ├── tool1.yaml
-|   │   └── tool2.yaml
-│   ├── scripts
-|   │   ├── script1.py
-|   │   └── script2.R
-│   ├── notebooks
-|   │   ├── notebook1.py.ipynb
-|   │   └── notebook2.r.ipynb
-│   ├── report
-|   │   ├── plot1.rst
-|   │   └── plot2.rst
-|   └── Snakefile
-├── config
-│   ├── config.yaml
-│   └── some-sheet.tsv
-├── results
-|   ├── Results1
-|   └── Results2
-└── resources
+├── scripts     <- analysis scripts, markdowns etc
+├── raw         <- raw immutable data
+├── input       <- intermediate datasets that have been processed
+├── output      <- more intermediate datasets
+├── results     <- final results
+├── docs        <- explanatory documents
+├── src         <- external software programs
+└── sandbox     <- testing playground 
 ```
 
 # File Structure
