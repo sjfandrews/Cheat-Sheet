@@ -98,3 +98,5 @@ scp /Users/shea/Downloads/file andres12@chimera.hpc.mssm.edu:/sc/orga/projects/L
 ```
 bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 -Is /usr/bin/env bash
 ```
+
+[](https://stackoverflow.com/questions/25721884/how-should-i-deal-with-package-xxx-is-not-available-for-r-version-x-y-z-wa)
