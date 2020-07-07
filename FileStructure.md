@@ -1,0 +1,140 @@
+```
+├── .gitignore
+├── README.md
+├── LICENSE.md
+├── workflow
+│   ├── rules
+|   │   ├── module1.smk
+|   │   └── module2.smk
+│   ├── envs
+|   │   ├── tool1.yaml
+|   │   └── tool2.yaml
+│   ├── scripts
+|   │   ├── script1.py
+|   │   └── script2.R
+│   ├── notebooks
+|   │   ├── notebook1.py.ipynb
+|   │   └── notebook2.r.ipynb
+│   ├── report
+|   │   ├── plot1.rst
+|   │   └── plot2.rst
+|   └── Snakefile
+├── config
+│   ├── config.yaml
+│   └── some-sheet.tsv
+├── results
+|   ├── Results1
+|   └── Results2
+└── resources
+```
+
+# File Structure
+
+## Snakemake Distribution and Reproducibility
+- [Description](https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html)
+- [cookiecutter-snakemake-workflow](https://github.com/snakemake-workflows/cookiecutter-snakemake-workflow)
+
+```
+├── .gitignore
+├── README.md
+├── LICENSE.md
+├── workflow                          <- workflow code goes into a subfolder
+│   ├── rules                         <- rules can be stored in a modular way, using the optional subfolder
+|   │   ├── module1.smk               <- modules should end with .smk
+|   │   └── module2.smk
+│   ├── envs                          <- Conda environments should be stored in a subfolder
+|   │   ├── tool1.yaml
+|   │   └── tool2.yaml
+│   ├── scripts                       <-  scripts should be stored in a subfolder
+|   │   ├── script1.py
+|   │   └── script2.R
+│   ├── notebooks                     <- notebooks in a subfolder
+|   │   ├── notebook1.py.ipynb
+|   │   └── notebook2.r.ipynb
+│   ├── report                        <- snakemake html reports
+|   │   ├── plot1.rst
+|   │   └── plot2.rst
+|   └── Snakefile                     <- central Snakefile marks the entrypoint of the workflow
+├── config                            <- configuration is stored in a subfolder
+│   ├── config.yaml
+│   └── some-sheet.tsv
+├── results                           <- All output files generated in the workflow should be stored under
+└── resources                         <- retrieved resources, should be stored under a subfolder
+```
+
+## Data Science
+- [Description](https://drivendata.github.io/cookiecutter-data-science/#cookiecutter-data-science)
+- [Cookecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/#contributing)
+
+```
+├── LICENSE
+├── Makefile           <- Makefile with commands like `make data` or `make train`
+├── README.md          <- The top-level README for developers using this project.
+├── data
+│   ├── external       <- Data from third party sources.
+│   ├── interim        <- Intermediate data that has been transformed.
+│   ├── processed      <- The final, canonical data sets for modeling.
+│   └── raw            <- The original, immutable data dump.
+│
+├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+│
+├── models             <- Trained and serialized models, model predictions, or model summaries
+│
+├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+│                         the creator's initials, and a short `-` delimited description, e.g.
+│                         `1.0-jqp-initial-data-exploration`.
+│
+├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+│
+├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+│   └── figures        <- Generated graphics and figures to be used in reporting
+│
+├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze > requirements.txt`
+│
+├── setup.py           <- Make this project pip installable with `pip install -e`
+├── src                <- Source code for use in this project.
+│   ├── __init__.py    <- Makes src a Python module
+│   │
+│   ├── data           <- Scripts to download or generate data
+│   │   └── make_dataset.py
+│   │
+│   ├── features       <- Scripts to turn raw data into features for modeling
+│   │   └── build_features.py
+│   │
+│   ├── models         <- Scripts to train models and then use trained models to make
+│   │   │                 predictions
+│   │   ├── predict_model.py
+│   │   └── train_model.py
+│   │
+│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+│       └── visualize.py
+│
+└── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
+```
+
+## Assoicated Press
+
+- [AP R Cookecutter](https://github.com/associatedpress/cookiecutter-r-project)
+
+```
+.
+├── .Rprofile
+├── .gitignore
+├── README.md
+├── analysis              <- R code that involves analysis on already-cleaned data
+│   └── archive           <- Any analyses for story threads that are no longer being investigated are placed here for reference
+│   └── markdown          <- Any R Markdown files go here
+├── data
+│   ├── documentation     <- Documentation on data files should go here
+│   ├── handmade          <- Manually created data sets by reporters go here
+│   ├── html_reports      <- Any HTML reports or pages generated by code should go here
+│   ├── processed         <- Data that has been processed by scripts in this project and is clean and ready for analysis goes here
+│   ├── public            <- Public-facing data files
+│   └── source            <- Original data from sources goes here
+├── etl                   <- ETL (extract, transform, load) scripts for reading in source data and cleaning and standardizing it to prepare for analysis go here.
+├── publish               <- This directory holds all documents in the project that will be public facing
+├── scratch               <- This directory contains scratch materials that will not be used in the project at the end.
+├── viz                   <- Graphics and visualization development specific work such as web interactive code should go here.
+└── {{cookiecutter.project_slug}}.Rproj
+```
