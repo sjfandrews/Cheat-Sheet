@@ -91,7 +91,7 @@ scp andres12@chimera.hpc.mssm.edu:/sc/orga/projects/LOAD/shea/file /Users/shea/D
 **SCP from local to chimera**
 
 ```
-scp /Users/shea/Downloads/file andres12@chimera.hpc.mssm.edu:/sc/orga/projects/LOAD/shea/file 
+scp /Users/shea/Downloads/file andres12@chimera.hpc.mssm.edu:/sc/arion/projects/LOAD/shea/file 
 ```
 
 **Launch interactive job**
