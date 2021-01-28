@@ -130,7 +130,7 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 * [Homebrew](https://brew.sh/)
   - [Git](https://git-scm.com/download/mac): `brew install git`
   - [Fish](https://fishshell.com/): 'brew install fish'
-* [Oh my fish](https://github.com/oh-my-fish/oh-my-fish): 'curl -L https://get.oh-my.fish | fish'
+* [Oh my fish](https://github.com/oh-my-fish/oh-my-fish): `curl -L https://get.oh-my.fish | fish`
   - `omf install jacaetevha; omf theme jacaetevha`
 * [Miniconda](https://conda.io/en/latest/miniconda.html)
 * [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
