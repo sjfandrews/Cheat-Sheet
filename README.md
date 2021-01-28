@@ -106,10 +106,29 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 ### Computing 
 
 * [Atom](https://atom.io/)
+  - rbox
+  - pigments
+  - minimap-pigments
+  - minimap-linter
+  - minimap-find-and-replace
+  - minimap-lens
+  - minimap-split-diff
+  - split-diff
+  - teletype
+  - sublime-style-column-selection
+  - blame
+  - file-icons
+  - git-plus
+  - git-control 
+  - git-history
+  - language-markdown
+  - language-fish-shell
+  - linter-tidy
 * [iTerm2](https://iterm2.com/downloads.html)
 * [R](https://cran.r-project.org/bin/macosx/)
 * [Rstudio](https://rstudio.com/products/rstudio/download/)
 * [Homebrew](https://brew.sh/)
+* [Git](https://git-scm.com/download/mac)
 * [Fish](https://fishshell.com/)
 * [Oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 * [Miniconda](https://conda.io/en/latest/miniconda.html)
@@ -149,6 +168,11 @@ create mc script.
 vim /Users/sheaandrews/.local/scripts/mc
 ```
 
-
+set permisions 
+```
+sudo dscl . -create /Groups/LOAD
+sudo dscl . -create /Groups/LOAD gid 31387
+sudo dscl . -create /Groups/LOAD GroupMembership $USER
+```
 
 
