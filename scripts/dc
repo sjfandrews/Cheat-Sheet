@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+## cp to /Users/username/local/scripts/
+
+cd
+
+mount | grep -q /sc && diskutil unmount force /sc
+mount | grep -q /hpc && diskutil unmount force /hpc
+ps aux | grep -q sshfs && killall -9 sshfs
