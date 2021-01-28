@@ -128,9 +128,10 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 * [R](https://cran.r-project.org/bin/macosx/)
 * [Rstudio](https://rstudio.com/products/rstudio/download/)
 * [Homebrew](https://brew.sh/)
-* [Git](https://git-scm.com/download/mac)
-* [Fish](https://fishshell.com/)
-* [Oh my fish](https://github.com/oh-my-fish/oh-my-fish)
+  - [Git](https://git-scm.com/download/mac): `brew install git`
+  - [Fish](https://fishshell.com/): 'brew install fish'
+* [Oh my fish](https://github.com/oh-my-fish/oh-my-fish): 'curl -L https://get.oh-my.fish | fish'
+  - `omf install jacaetevha; omf theme jacaetevha`
 * [Miniconda](https://conda.io/en/latest/miniconda.html)
 * [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
 * [macFuse & sshfs](https://osxfuse.github.io/)
@@ -141,6 +142,10 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 * [Microsoft 365](https://www.office.com/)
   - Outlook: Exchange; Username: MSSMCAMPUS\username; pwd
 * [Zoom](https://zoom.us/download)
+
+### App Store
+* [iStat Menues](https://apps.apple.com/us/app/istat-menus/id1319778037?mt=12)
+* [tadam](https://apps.apple.com/us/app/tadam-stay-focused-at-work/id531349534?mt=12)
 
 **ssh & sshfs**
 
@@ -173,6 +178,13 @@ set permisions
 sudo dscl . -create /Groups/LOAD
 sudo dscl . -create /Groups/LOAD gid 31387
 sudo dscl . -create /Groups/LOAD GroupMembership $USER
+```
+
+**Config files** 
+
+```
+vim ~/.bashrc
+vim ~/.config/fish/config.fish
 ```
 
 
