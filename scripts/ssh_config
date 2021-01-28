@@ -1,3 +1,10 @@
+# Creat ssh config file 
+## https://linuxize.com/post/using-the-ssh-config-file/
+
+## mkdir -p ~/.ssh && chmod 700 ~/.ssh
+## touch ~/.ssh/config
+## chmod 600 ~/.ssh/config
+
 Host bode
   User andres12
   HostName bode.hpc.mssm.edu
