@@ -145,6 +145,9 @@ chmod 644 /etc/synthetic.conf
 ```
 
 create mc script. 
+```
+vim /Users/sheaandrews/.local/scripts/mc
+```
 
 
 
