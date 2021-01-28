@@ -100,3 +100,24 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 ```
 
 [](https://stackoverflow.com/questions/25721884/how-should-i-deal-with-package-xxx-is-not-available-for-r-version-x-y-z-wa)
+
+## Just reformated a computer, now what 
+
+### Computing 
+
+* [Atom](https://atom.io/)
+* [R](https://cran.r-project.org/bin/macosx/)
+* [Rstudio](https://rstudio.com/products/rstudio/download/)
+* [Homebrew](https://brew.sh/)
+* [Fish](https://fishshell.com/)
+* [Miniconda](https://conda.io/en/latest/miniconda.html)
+* [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
+
+### Software 
+* [Google Chorme](https://www.google.com/chrome/)
+* [Dropbox](https://www.dropbox.com/downloading)
+* [Microsoft 365](https://www.office.com/)
+* [Zoom](https://zoom.us/download)
+
+
+
