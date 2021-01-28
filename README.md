@@ -134,12 +134,17 @@ chmod 700 ~/.ssh/cm_socket
 ```
 
 for sshfs 
-# https://derflounder.wordpress.com/2020/01/18/creating-root-level-directories-and-symbolic-links-on-macos-catalina/ 
+Make root directories [guide](https://derflounder.wordpress.com/2020/01/18/creating-root-level-directories-and-symbolic-links-on-macos-catalina/)
 ```
 sudo touch /etc/synthetic.conf
-sudo vim /etc/synthetic.conf # add sc\nhpc
+sudo vim /etc/synthetic.conf
+# add to /etc/synthetic.conf symlinks to root dir (rm comments)
+# sc	/Users/sheaandrews/minerva_sc
+# hpc	/Users/sheaandrews/minerva_hpc
 chmod 644 /etc/synthetic.conf
 ```
+
+create mc script. 
 
 
 
