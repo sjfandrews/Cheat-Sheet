@@ -114,7 +114,7 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 * [Oh my fish](https://github.com/oh-my-fish/oh-my-fish)
 * [Miniconda](https://conda.io/en/latest/miniconda.html)
 * [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
-* [macFuxe](https://osxfuse.github.io/)
+* [macFuse & sshfs](https://osxfuse.github.io/)
 
 ### Software 
 * [Google Chorme](https://www.google.com/chrome/)
@@ -122,6 +122,25 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 * [Microsoft 365](https://www.office.com/)
   - Outlook: Exchange; Username: MSSMCAMPUS\username; pwd
 * [Zoom](https://zoom.us/download)
+
+**ssh & sshfs**
+
+create ssh/config and dir 
+
+```
+vim ~/.ssh/config
+mkdir ~/.ssh/cm_socket
+chmod 700 ~/.ssh/cm_socket
+```
+
+for sshfs 
+# https://derflounder.wordpress.com/2020/01/18/creating-root-level-directories-and-symbolic-links-on-macos-catalina/ 
+```
+sudo touch /etc/synthetic.conf
+sudo vim /etc/synthetic.conf # add sc\nhpc
+chmod 644 /etc/synthetic.conf
+```
+
 
 
 
