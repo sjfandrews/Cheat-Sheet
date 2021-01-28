@@ -1,0 +1,9 @@
+#!/usr/bin/env fish
+## cp to /Users/username/local/scripts/
+
+mount | grep -q /sc; and diskutil unmount force /sc
+mount | grep -q /hpc; and diskutil unmount force /hpc
+ps aux | grep -q sshfs; and killall -9 sshfs
+
+sshfs -o allow_other -o noappledouble -o volname=minerva_sc -o follow_symlinks minerva:/sc /sc/
+sshfs -o allow_other -o noappledouble -o volname=minerva_hpc -o follow_symlinks minerva:/hpc /hpc/
