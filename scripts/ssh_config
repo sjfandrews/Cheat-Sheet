@@ -1,0 +1,16 @@
+Host bode
+  User andres12
+  HostName bode.hpc.mssm.edu
+  ForwardX11Trusted yes
+Host minerva
+  User andres12
+  HostName minerva12.hpc.mssm.edu
+  ForwardX11Trusted yes
+Host *
+  ControlPath ~/.ssh/cm_socket/%r@%h:%p
+  ControlMaster auto
+  ControlPersist 10m
+  Compression yes
+  ForwardX11 yes
+  ServerAliveInterval 60
+  ServerAliveInterval 30
