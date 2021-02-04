@@ -187,4 +187,6 @@ vim ~/.bashrc
 vim ~/.config/fish/config.fish
 ```
 
+**R MacOS compliation errors** 
 
+[compile-issues-r](https://www.nistara.net/post/compile-issues-r/)
