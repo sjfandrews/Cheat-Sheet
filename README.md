@@ -135,6 +135,7 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 * [Miniconda](https://conda.io/en/latest/miniconda.html)
 * [Snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
 * [macFuse & sshfs](https://osxfuse.github.io/)
+* [docker](https://www.docker.com/products/docker-desktop)
 
 ### Software 
 * [Google Chorme](https://www.google.com/chrome/)
