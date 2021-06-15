@@ -169,6 +169,9 @@ chmod 700 ~/.ssh/cm_socket
 for sshfs 
 Make root directories [guide](https://derflounder.wordpress.com/2020/01/18/creating-root-level-directories-and-symbolic-links-on-macos-catalina/)
 ```
+mkdir minerva_sc
+mkdir minerva_hpc
+
 sudo touch /etc/synthetic.conf
 sudo vim /etc/synthetic.conf
 # add to /etc/synthetic.conf symlinks to root dir (rm comments)
