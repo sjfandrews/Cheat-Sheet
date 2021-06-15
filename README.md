@@ -18,6 +18,8 @@
 tmux new -s myname
 tmux a -t myname
 ```
+[tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
+
 
 **sshfs**
 ```
@@ -99,7 +101,10 @@ scp /Users/shea/Downloads/file andres12@chimera.hpc.mssm.edu:/sc/arion/projects/
 bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 -Is /usr/bin/env bash
 ```
 
-[](https://stackoverflow.com/questions/25721884/how-should-i-deal-with-package-xxx-is-not-available-for-r-version-x-y-z-wa)
+**Problems encountered** 
+
+[R MacOS compliation errors](https://www.nistara.net/post/compile-issues-r/)
+[R package not valiable](https://stackoverflow.com/questions/25721884/how-should-i-deal-with-package-xxx-is-not-available-for-r-version-x-y-z-wa)
 
 ## Just reformated a computer, now what 
 
@@ -129,7 +134,7 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 * [Rstudio](https://rstudio.com/products/rstudio/download/)
 * [Homebrew](https://brew.sh/)
   - [Git](https://git-scm.com/download/mac): `brew install git`
-  - [Fish](https://fishshell.com/): 'brew install fish'
+  - [Fish](https://fishshell.com/): `brew install fish`
 * [Oh my fish](https://github.com/oh-my-fish/oh-my-fish): `curl -L https://get.oh-my.fish | fish`
   - `omf install jacaetevha; omf theme jacaetevha`
 * [Miniconda](https://conda.io/en/latest/miniconda.html)
@@ -143,10 +148,13 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 * [Microsoft 365](https://www.office.com/)
   - Outlook: Exchange; Username: MSSMCAMPUS\username; pwd
 * [Zoom](https://zoom.us/download)
+* [Papers](https://www.papersapp.com/)
+* [Roam Research](https://roamresearch.com/)
 
 ### App Store
 * [iStat Menues](https://apps.apple.com/us/app/istat-menus/id1319778037?mt=12)
 * [tadam](https://apps.apple.com/us/app/tadam-stay-focused-at-work/id531349534?mt=12)
+* [Magnet](https://apps.apple.com/us/app/magnet/id441258766?mt=12)
 
 **ssh & sshfs**
 
@@ -187,7 +195,3 @@ sudo dscl . -create /Groups/LOAD GroupMembership $USER
 vim ~/.bashrc
 vim ~/.config/fish/config.fish
 ```
-
-**R MacOS compliation errors** 
-
-[compile-issues-r](https://www.nistara.net/post/compile-issues-r/)
