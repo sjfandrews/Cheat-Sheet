@@ -78,7 +78,7 @@ runningJobs=$(bjobs | grep RUN | wc -l); TotalJobs=$(bjobs | wc -l); bjobs -w; e
 mv file.vcf.bgz file.gz
 ```
 
-**Fine file name in directory** 
+**Find file name in directory** 
 
 ```
 find | grep "string"
@@ -99,6 +99,10 @@ scp /Users/shea/Downloads/file andres12@chimera.hpc.mssm.edu:/sc/arion/projects/
 **Launch interactive job**
 ```
 bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 -Is /usr/bin/env bash
+```
+
+```
+bsub -P acc_LOAD -q interactive -R span[hosts=1] -R rusage[mem=4000] -W 12:00 -n 8 -Is /usr/bin/env bash
 ```
 
 **Problems encountered** 
