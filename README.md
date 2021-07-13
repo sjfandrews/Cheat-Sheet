@@ -33,7 +33,7 @@ cp <binary.file> /usr/local/bin/
 
 **Use Awk to find the max value in a column**
 
-Find the highest value in column 1, skipping the header, print the whole line. 
+Find the highest value in column 1, skipping the header, print the whole line.
 ```
 awk -v max=0 'FNR > 1 {if($1>max){want=$0; max=$1}}END{print want} ' file
 ```
@@ -66,19 +66,19 @@ bsub -J "job name" -P acc_load -q premium -n 1 -R span[hosts=1] -R rusage[mem=16
 ```
 
 
-**Number of jobs running** 
+**Number of jobs running**
 
 ```
 runningJobs=$(bjobs | grep RUN | wc -l); TotalJobs=$(bjobs | wc -l); bjobs -w; echo "Currently ${runningJobs} out of ${TotalJobs} are running"
 ```
 
-**Decompress .bgz file** 
+**Decompress .bgz file**
 
 ```
 mv file.vcf.bgz file.gz
 ```
 
-**Find file name in directory** 
+**Find file name in directory**
 
 ```
 find | grep "string"
@@ -93,7 +93,7 @@ scp andres12@chimera.hpc.mssm.edu:/sc/orga/projects/LOAD/shea/file /Users/shea/D
 **SCP from local to chimera**
 
 ```
-scp /Users/shea/Downloads/file andres12@chimera.hpc.mssm.edu:/sc/arion/projects/LOAD/shea/file 
+scp /Users/shea/Downloads/file andres12@chimera.hpc.mssm.edu:/sc/arion/projects/LOAD/shea/file
 ```
 
 **Launch interactive job**
@@ -105,14 +105,14 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 bsub -P acc_LOAD -q interactive -R span[hosts=1] -R rusage[mem=4000] -W 12:00 -n 8 -Is /usr/bin/env bash
 ```
 
-**Problems encountered** 
+**Problems encountered**
 
 [R MacOS compliation errors](https://www.nistara.net/post/compile-issues-r/)
 [R package not valiable](https://stackoverflow.com/questions/25721884/how-should-i-deal-with-package-xxx-is-not-available-for-r-version-x-y-z-wa)
 
-## Just reformated a computer, now what 
+## Just reformated a computer, now what
 
-### Computing 
+### Computing
 
 * [Atom](https://atom.io/)
   - rbox
@@ -128,7 +128,7 @@ bsub -P acc_LOAD -q interactive -R span[hosts=1] -R rusage[mem=4000] -W 12:00 -n
   - blame
   - file-icons
   - git-plus
-  - git-control 
+  - git-control
   - git-history
   - language-markdown
   - language-fish-shell
@@ -146,7 +146,7 @@ bsub -P acc_LOAD -q interactive -R span[hosts=1] -R rusage[mem=4000] -W 12:00 -n
 * [macFuse & sshfs](https://osxfuse.github.io/)
 * [docker](https://www.docker.com/products/docker-desktop)
 
-### Software 
+### Software
 * [Google Chorme](https://www.google.com/chrome/)
 * [Dropbox](https://www.dropbox.com/downloading)
 * [Microsoft 365](https://www.office.com/)
@@ -162,7 +162,7 @@ bsub -P acc_LOAD -q interactive -R span[hosts=1] -R rusage[mem=4000] -W 12:00 -n
 
 **ssh & sshfs**
 
-create ssh/config and dir 
+create ssh/config and dir
 
 ```
 vim ~/.ssh/config
@@ -170,33 +170,48 @@ mkdir ~/.ssh/cm_socket
 chmod 700 ~/.ssh/cm_socket
 ```
 
-for sshfs 
+for sshfs
 Make root directories [guide](https://derflounder.wordpress.com/2020/01/18/creating-root-level-directories-and-symbolic-links-on-macos-catalina/)
 ```
 mkdir minerva_sc
 mkdir minerva_hpc
 
-sudo touch /etc/synthetic.conf
 sudo vim /etc/synthetic.conf
 # add to /etc/synthetic.conf symlinks to root dir (rm comments)
-# sc	/Users/sheaandrews/minerva_sc
-# hpc	/Users/sheaandrews/minerva_hpc
-chmod 644 /etc/synthetic.conf
+# sc	/Users/$USER/minerva_sc
+# hpc	/Users/$USER/minerva_hpc
+sudo chmod 644 /etc/synthetic.conf
 ```
 
-create mc script. 
+create mc script.
 ```
 vim /Users/sheaandrews/.local/scripts/mc
 ```
 
-set permisions 
+set permisions
 ```
 sudo dscl . -create /Groups/LOAD
 sudo dscl . -create /Groups/LOAD gid 31387
 sudo dscl . -create /Groups/LOAD GroupMembership $USER
+
+sudo dscl . -create /Groups/regeneron_user
+sudo dscl . -create /Groups/regeneron_user gid 31317
+sudo dscl . -create /Groups/regeneron_user GroupMembership $USER
+
+sudo dscl . -create /Groups/goatea01a
+sudo dscl . -create /Groups/goatea01a gid 31367
+sudo dscl . -create /Groups/goatea01a GroupMembership $USER
+
+sudo dscl . -create /Groups/ukb41798_user
+sudo dscl . -create /Groups/ukb41798_user gid 31387
+sudo dscl . -create /Groups/ukb41798_user GroupMembership $USER
+
+sudo dscl . -create /Groups/data-ark
+sudo dscl . -create /Groups/data-ark gid 40063
+sudo dscl . -create /Groups/data-ark GroupMembership $USER
 ```
 
-**Config files** 
+**Config files**
 
 ```
 vim ~/.bashrc
