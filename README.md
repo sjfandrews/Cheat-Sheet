@@ -26,6 +26,19 @@ tmux a -t myname
 sshfs andres12@bode.hpc.mssm.edu:/sc/orga/projects/LOAD ~/LOAD_minerva/dummy
 ```
 
+**Set permisions**
+
+```
+chmod 777 #simple read, write, exectute
+setfacl -m u:usr:rwx,m::rwx /path/to/file
+
+
+setfacl -Rm u:usr:rwx,m::rwx /dir
+setfacl -Rdm u:usr:rwx,m::rwx /dir
+
+setfacl -m u:usr:rwx,u:usr2:rwx,m::rwx
+```
+
 **Moving binary file to be able to launch from anywhere**
 ```
 cp <binary.file> /usr/local/bin/
