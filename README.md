@@ -122,6 +122,14 @@ bsub -P acc_LOAD -q premium -R span[hosts=1] -R rusage[mem=4000] -W 140:00 -n 8 
 bsub -P acc_LOAD -q interactive -R span[hosts=1] -R rusage[mem=4000] -W 12:00 -n 8 -Is /usr/bin/env bash
 ```
 
+**Make ls pretty**
+If you want to make ls pretty, install exa and put the following in your shell config:
+
+```
+alias ll="exa --long --header --git --grid --accessed --modified --group --icons"
+alias ls="exa"
+```
+
 **Problems encountered**
 
 [R MacOS compliation errors](https://www.nistara.net/post/compile-issues-r/)
