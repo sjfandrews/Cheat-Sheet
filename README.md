@@ -130,6 +130,12 @@ alias ll="exa --long --header --git --grid --accessed --modified --group --icons
 alias ls="exa"
 ```
 
+**clean snakemake metadata**
+
+```
+rm -rf .snakemake/metadata/ .snakemake/log/  .snakemake/tmp.* .snakemake/scripts/ .snakemake/incomplete/
+```
+
 **Problems encountered**
 
 [R MacOS compliation errors](https://www.nistara.net/post/compile-issues-r/)
