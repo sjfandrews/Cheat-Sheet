@@ -3,6 +3,7 @@
 **Tutorials**
 
 [Snakemake](https://slowkow.com/notes/snakemake-tutorial/)
+
 [Goate Lab Onboarding](https://github.com/marcoralab/lab_operations/wiki/Onboarding)
 
 **LOAD project paths**
