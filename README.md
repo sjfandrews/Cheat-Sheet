@@ -4,8 +4,6 @@
 
 [Snakemake](https://slowkow.com/notes/snakemake-tutorial/)
 
-[Goate Lab Onboarding](https://github.com/marcoralab/lab_operations/wiki/Onboarding)
-
 **LOAD project paths**
 ```
 /sc/arion/projects/LOAD/shea/
@@ -195,58 +193,5 @@ rm -rf .snakemake/metadata/ .snakemake/log/  .snakemake/tmp.* .snakemake/scripts
 
 **ssh & sshfs**
 
-create ssh/config and dir
 
-```
-vim ~/.ssh/config
-mkdir ~/.ssh/cm_socket
-chmod 700 ~/.ssh/cm_socket
-```
-
-for sshfs
-Make root directories [guide](https://derflounder.wordpress.com/2020/01/18/creating-root-level-directories-and-symbolic-links-on-macos-catalina/)
-```
-mkdir minerva_sc
-mkdir minerva_hpc
-
-sudo vim /etc/synthetic.conf
-# add to /etc/synthetic.conf symlinks to root dir (rm comments)
-# sc	/Users/$USER/minerva_sc
-# hpc	/Users/$USER/minerva_hpc
-sudo chmod 644 /etc/synthetic.conf
-```
-
-create mc script.
-```
-vim /Users/sheaandrews/.local/scripts/mc
-```
-
-set permisions
-```
-sudo dscl . -create /Groups/LOAD
-sudo dscl . -create /Groups/LOAD gid 31387
-sudo dscl . -create /Groups/LOAD GroupMembership $USER
-
-sudo dscl . -create /Groups/regeneron_user
-sudo dscl . -create /Groups/regeneron_user gid 31317
-sudo dscl . -create /Groups/regeneron_user GroupMembership $USER
-
-sudo dscl . -create /Groups/goatea01a
-sudo dscl . -create /Groups/goatea01a gid 31367
-sudo dscl . -create /Groups/goatea01a GroupMembership $USER
-
-sudo dscl . -create /Groups/ukb41798_user
-sudo dscl . -create /Groups/ukb41798_user gid 31387
-sudo dscl . -create /Groups/ukb41798_user GroupMembership $USER
-
-sudo dscl . -create /Groups/data-ark
-sudo dscl . -create /Groups/data-ark gid 40063
-sudo dscl . -create /Groups/data-ark GroupMembership $USER
-```
-
-**Config files**
-
-```
-vim ~/.bashrc
-vim ~/.config/fish/config.fish
-```
+[Goate Lab Onboarding](https://github.com/marcoralab/lab_operations/wiki/Onboarding)
