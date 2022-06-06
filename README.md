@@ -4,6 +4,8 @@
 
 [Snakemake](https://slowkow.com/notes/snakemake-tutorial/)
 
+[Getting Started with a HPC](https://code.sbamin.com/hpc/)
+
 **LOAD project paths**
 ```
 /sc/arion/projects/LOAD/shea/
