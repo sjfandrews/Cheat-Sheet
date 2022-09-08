@@ -147,25 +147,7 @@ rm -rf .snakemake/metadata/ .snakemake/log/  .snakemake/tmp.* .snakemake/scripts
 
 ### Computing
 
-* [Atom](https://atom.io/)
-  - rbox
-  - pigments
-  - minimap-pigments
-  - minimap-linter
-  - minimap-find-and-replace
-  - minimap-lens
-  - minimap-split-diff
-  - split-diff
-  - teletype
-  - sublime-style-column-selection
-  - blame
-  - file-icons
-  - git-plus
-  - git-control
-  - git-history
-  - language-markdown
-  - language-fish-shell
-  - linter-tidy
+* [VScode](https://code.visualstudio.com/)
 * [iTerm2](https://iterm2.com/downloads.html)
 * [R](https://cran.r-project.org/bin/macosx/)
 * [Rstudio](https://rstudio.com/products/rstudio/download/)
