@@ -6,6 +6,8 @@
 
 [Getting Started with a HPC](https://code.sbamin.com/hpc/)
 
+[Using Docker with R - an introduction](https://environments.rstudio.com/docker)
+
 **LOAD project paths**
 ```
 /sc/arion/projects/LOAD/shea/
